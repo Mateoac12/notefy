@@ -7,10 +7,8 @@
     "dev": "cross-env NODE_ENV=development nodemon index.js",
     "start": "cross-env NODE_ENV=production node index.js",
     "test": "cross-env NODE_ENV=test PORT=1234 jest --verbose users.test.js",
-    "test:watch": "npm run test -- --watch",
-    "commit": "cz",
-    "commit:full": "git add . & npm run commit & git push origin main"
-  },
+    "test:watch": "npm run test -- --watch"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -25,7 +23,6 @@
     "mongoose-unique-validator": "^2.0.3"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0",
     "nodemon": "^2.0.7",
     "supertest": "^6.1.3"
   }

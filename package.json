@@ -11,7 +11,9 @@
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=app",
     "start": "npm run start --workspace=api",
-    "dev:api": "npm run build && npm run dev --workspace=api"
+    "dev:api": "npm run build && npm run dev --workspace=api",
+    "start:app": "npm run dev --workspace=api && npm start --workspace=app",
+    "commit": "git add . & cz & git push origin main"
   },
   "engines": {
     "npm": "7.9.0"
@@ -31,6 +33,7 @@
   "devDependencies": {
     "eslint": "^7.27.0",
     "standard": "^16.0.3",
+    "cz-conventional-changelog": "^3.3.0",
     "jest": "^27.0.1"
   },
   "config": {

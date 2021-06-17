@@ -23,7 +23,7 @@ export const LandingPage = () => {
     <PrincipalTitle>
       Con <ImportantColor>Notefy</ImportantColor>
       <Typist
-        sentences={[' Escribi!', ' Recorda!', ' Organiza!']}
+        sentences={[' Escribí!', ' Recordá!', ' Organizá!']}
         deletingSpeed={100}
         loop={false}
       />
@@ -32,7 +32,7 @@ export const LandingPage = () => {
       <BannerImage />
     </ImageContainer>
     <HeaderContainer>
-      <Title>Recuerda lo que es importante<br/><ImportantWord>para ti</ImportantWord> y para los <ImportantWord>demas!</ImportantWord></Title>
+      <Title>Recuerda lo que es importante<br/><ImportantWord>para tí</ImportantWord> y para los <ImportantWord>demás!</ImportantWord></Title>
       <CiteWord>Notefy</CiteWord>
     </HeaderContainer>
   </Container>

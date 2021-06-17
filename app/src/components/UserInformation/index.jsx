@@ -18,8 +18,8 @@ export const UserInformation = ({ forwardRef, setLoggedNickname, loggedNickname,
 
   return <>
     <Toggable buttonLabel={loggedNickname} ref={forwardRef}>
-        <Title>Hola {loggedNickname}!<br/>Como estas?</Title>
-      <LoginButton onClick={handleLogout}>Cerrar sesion</LoginButton>
+        <Title>Hola {loggedNickname}!<br/>Cómo estas?</Title>
+      <LoginButton onClick={handleLogout}>Cerrar sesión</LoginButton>
     </Toggable>
   </>
 }

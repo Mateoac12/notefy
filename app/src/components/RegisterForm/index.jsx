@@ -57,7 +57,7 @@ export const RegisterForm = () => {
           value={username}
         />
 
-        <Label htmlFor="firstPassword">Contrasena:</Label>
+        <Label htmlFor="firstPassword">Contraseña:</Label>
         <Inputs
           type="password"
           id="firstPassword"
@@ -66,7 +66,7 @@ export const RegisterForm = () => {
         />
 
         {
-          hadError && <ErrorMessage>Mmmm, parece que ese nombre de usuario ya existe 🤔</ErrorMessage>
+          hadError && <ErrorMessage>Mm, parece que ese nombre de usuario ya existe 🤔</ErrorMessage>
         }
 
         <ButtonSubmit>Registrarse!</ButtonSubmit>

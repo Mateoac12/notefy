@@ -19,7 +19,7 @@ const handleConnectServer = ({ username, password, forwardRef, setLoggedNickname
       setLoggedNickname(data.username)
     })
     .catch(() => {
-      setLoginError('Usuario o contrasena incorrecta!')
+      setLoginError('Usuario o contraseña incorrecta!')
     })
 }
 

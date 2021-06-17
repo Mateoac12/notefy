@@ -16,11 +16,19 @@ const CreateNote = () => {
   const handleChangeTitle = e => setTitle(e.target.value)
   const handleChangeContent = e => setContent(e.target.value)
 
+  const handleResetNote = () => {
+    setTitle('')
+    setContent('')
+  }
+
   const handleCreateNote = e => {
     e.preventDefault()
+
+    if (title === "" && content === "") return
     _useCreateNote({ title, content, modalRef })
       .then(data => {
         setAllNotes(lastnotes => lastnotes.concat(data))
+        handleResetNote()
       })
   }
   
